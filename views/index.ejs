@@ -1,0 +1,20 @@
+<% include partials/header %>
+	<header>
+	    <h1>Huis in Amsterdam</h1>
+    </header>
+    <main id="overview">
+
+	    <% for(var i = 0; i < residences.Objects.length; i++) {%>
+	    <a href="/residences/<%= residences.Objects[i].Id%>">
+            <img src="<%= residences.Objects[i].FotoLarge %>" />
+            <h2><%= residences.Objects[i].Adres %></h2>
+            <ul>
+                <li>Aantal kamers: <%= residences.Objects[i].AantalKamers %></li>
+                <li>Prijs: &euro; <%= residences.Objects[i].Koopprijs %></li>
+            </ul>
+	    </a>
+	    <% } %>
+	</main>
+
+<% include partials/footer.ejs %>
+
