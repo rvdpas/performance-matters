@@ -11,21 +11,19 @@ Nadat mijn applicatie klaar was heb ik hem door Google pagespeed gehaald er daar
 Na het toevoegen van Gzip:  
 ![Start optimalisatie](https://github.com/rvdpas/performance-matters/blob/master/public/g-zip.png)
 
-### Progressive Enhancement
+### Hoe gebruik je de applicatie
 
+Clone of download de repository
+`https://github.com/rvdpas/performance-matters.git`  
 
-### Feature Detection
+Installeer de node_modules 
+`npm install`  
 
-### Fallback
+Start de server op  
+`npm start`  
 
-
-### Opdracht
-
-
-### User Case
-
-### De oplossing
- 
+Creeër een link 
+`npm run expose`
 
 ### Verbeterpunten
 
