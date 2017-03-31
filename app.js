@@ -2,6 +2,7 @@ var express = require('express');
 var request = require('request');
 var bodyParser = require('body-parser');
 var path = require('path');
+var compression = require('compression');
 
 var app = express();
 
@@ -27,6 +28,12 @@ app.use(function(req, res, next) {
 	res.locals.errors = null;
 	next();
 });
+
+// Compression
+app.use(compression({
+  threshold: 0,
+  filter: () => true,
+}));
 
 app.post('/result', search);
 function search(req, res){
