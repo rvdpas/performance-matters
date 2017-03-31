@@ -5,11 +5,15 @@ Tijdens de Minor Web Development van de HvA kreeg ik het vak Performance Matters
 
 ### Optimalisaties
 Nadat mijn applicatie klaar was heb ik hem door Google pagespeed gehaald er daar kwam het volgende resultaat uit:  
-![Start optimalisatie](https://github.com/rvdpas/performance-matters/blob/master/public/start.png)
+![Start optimalisatie](https://github.com/rvdpas/performance-matters/blob/master/public/img/start.png)
 
 ### Gzip
 Na het toevoegen van Gzip:  
-![Start optimalisatie](https://github.com/rvdpas/performance-matters/blob/master/public/g-zip.png)
+![Gzip](https://github.com/rvdpas/performance-matters/blob/master/public/img/g-zip.png)
+
+### Critical CSS
+![Critaical CSS](https://github.com/rvdpas/performance-matters/blob/master/public/img/critical-css.png)
+critical-css.png
 
 ### Hoe gebruik je de applicatie
 

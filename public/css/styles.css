@@ -62,10 +62,22 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 900px) {
+  #overview {
+    flex-direction: column;
+  }
+}
+
 main a {
   width: 30%;
   text-decoration: none;
   color: #333;
+}
+
+@media (max-width: 900px) {
+  main a {
+    width: 50%;
+  }
 }
 
 main h2 {
