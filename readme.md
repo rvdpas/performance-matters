@@ -15,19 +15,23 @@ Na het toevoegen van Gzip:
 ![Critaical CSS](https://github.com/rvdpas/performance-matters/blob/master/public/img/critical-css.png)
 critical-css.png
 
+### Wat kun je met de applicatie
+Ik maak gebruik van de Funda Api. Hiermee kun je alle huizen ophalen gebasseerd op een zoekopdracht. Achter de overzichtpagina zit een detailpagina die inzicht geeft in de details van het huis.
+
 ### Hoe gebruik je de applicatie
 
-Clone of download de repository
+Clone of download de repository  
 `https://github.com/rvdpas/performance-matters.git`  
 
-Installeer de node_modules 
+Installeer de node_modules   
 `npm install`  
 
 Start de server op  
 `npm start`  
 
-Creeër een link 
+Creeër een link  
 `npm run expose`
 
-### Verbeterpunten
-
+### Wishlist
+* Huizen vergelijken
+* Huizen filteren
