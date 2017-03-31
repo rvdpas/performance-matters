@@ -1,19 +1,24 @@
 <% include partials/header %>
 	<header>
-	    <h1>Huis in Amsterdam</h1>
+	    <h1>Zoek een huis</h1>
+        <form action="/result" method="post">
+          <input type="search" name="input" id="searchBar" name="query" placeholder="Zoek naar een huis">
+      </form>
     </header>
     <main id="overview">
 
 	    <% for(var i = 0; i < residences.Objects.length; i++) {%>
-	    <a href="/residences/<%= residences.Objects[i].Id%>">
-            <img src="<%= residences.Objects[i].FotoLarge %>" />
-            <h2><%= residences.Objects[i].Adres %></h2>
-            <ul>
-                <li>Aantal kamers: <%= residences.Objects[i].AantalKamers %></li>
-                <li>Prijs: &euro; <%= residences.Objects[i].Koopprijs %></li>
-            </ul>
-	    </a>
+    	    <a href="/residences/<%= residences.Objects[i].Id%>">
+                <img src="<%= residences.Objects[i].FotoLarge %>" />
+                <h2><%= residences.Objects[i].Adres %></h2>
+                <ul>
+                    <li>Aantal kamers: <%= residences.Objects[i].AantalKamers %></li>
+                    <li>Prijs: <%- residences.Objects[i].PrijsGeformatteerdHtml %></li>
+                    <li>Woonplaats: <%= residences.Objects[i].Woonplaats %></li>
+                </ul>
+    	    </a>
 	    <% } %>
+
 	</main>
 
 <% include partials/footer.ejs %>

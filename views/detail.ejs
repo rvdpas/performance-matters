@@ -1,12 +1,12 @@
 <% include partials/header %>
-    <main class="detail">
+    <main id="detail">
 
-        <img src="<%= residence.HoofdFoto %>" />
         <h2><%= residence.Adres %></h2>
+        <img src="<%= residence.HoofdFoto %>" />
         <ul>
             <li>Aantal kamers: <%= residence.AantalKamers %></li>
             <li>Prijs: &euro; <%= residence.Koopprijs %></li>
         </ul>
-        <p><%= residence.VolledigeOmschrijving %></p>
+        <p><%= residence.Omschrijving %></p>
     </main>
 <% include partials/footer.ejs %>
