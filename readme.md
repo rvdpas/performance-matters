@@ -1,37 +1,29 @@
 # Performance Matters Funda
 
-### Introductie
-Tijdens de Minor Web Development van de HvA kreeg ik het vak Performance Matters. In dit vak leer ik hoe je het beste je site kan optimaliseren voor snelheid. Je krijgt begrip dat je voor allemaal verschillende devices en verbindingen ontwerpt en dat het voor hun ook belangrijk is om prettig over je site of applicatie te surfen.
+## Introduction
 
-### Optimalisaties
-Nadat mijn applicatie klaar was heb ik hem door Google pagespeed gehaald er daar kwam het volgende resultaat uit:  
-![Start optimalisatie](https://github.com/rvdpas/performance-matters/blob/master/public/img/start.png)
+## Optimalisations
+
+### Compression
 
 ### Gzip
-Na het toevoegen van Gzip:  
-![Gzip](https://github.com/rvdpas/performance-matters/blob/master/public/img/g-zip.png)
 
 ### Critical CSS
-![Critaical CSS](https://github.com/rvdpas/performance-matters/blob/master/public/img/critical-css.png)
-critical-css.png
 
-### Wat kun je met de applicatie
-Ik maak gebruik van de Funda Api. Hiermee kun je alle huizen ophalen gebasseerd op een zoekopdracht. Achter de overzichtpagina zit een detailpagina die inzicht geeft in de details van het huis.
+### Lazy loading
 
-### Hoe gebruik je de applicatie
+### spinner
 
-Clone of download de repository  
-`https://github.com/rvdpas/performance-matters.git`  
+### How to install the application
 
-Installeer de node_modules   
-`npm install`  
+Clone or download the repository  
+```https://github.com/rvdpas/performance-matters.git```     
 
-Start de server op  
-`npm start`  
+Install the dependecies   
+```npm install```   
 
-Creeër een link  
-`npm run expose`
+Start the server  
+```npm start```  
 
 ### Wishlist
-* Huizen vergelijken
-* Huizen filteren
+* Compare multiple houses
