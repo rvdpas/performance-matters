@@ -66,19 +66,13 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 main a {
-  flex-basis: 30%;
   text-decoration: none;
   color: #333;
-}
-
-@media (max-width: 900px) {
-  main a {
-    flex-basis: 48%;
-    margin: 0 1%;
-  }
+  width: 32%;
 }
 
 main h2 {
@@ -86,9 +80,20 @@ main h2 {
   color: #333;
 }
 
+.image-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: #9d9d9d;
+  padding-bottom: 66%;
+}
+
 main a img {
   display: block;
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
 }
 
 main ul {
