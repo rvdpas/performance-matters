@@ -6,6 +6,9 @@
       </form>
     </header>
     <main id="overview">
+        <section class="loader-wrapper">
+            <div class="loader"></div>
+        </section>
 
 	    <% for(var i = 0; i < residences.Objects.length; i++) {%>
     	    <a href="/residences/<%= residences.Objects[i].Id%>">
