@@ -1,0 +1,19 @@
+{
+    "name": "Funda App",
+    "short_name": "Funda app",
+    "description": null,
+    "dir": "auto",
+    "lang": "en-US",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "/?homescreen=1",
+    "background_color": "#F7A100",
+    "theme_color": "#333",
+    "icons": [
+        {
+          "src": "",
+          "sizes": "180x180",
+          "type": "image/png"
+        }
+    ]
+}

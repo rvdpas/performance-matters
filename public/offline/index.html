@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Offline page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Helaas, wij kunen uw pagina niet vinden.</h1>
+
+    <div id="cache-url">
+        <h2>Wij zijn het aan het oplossen voor u</h2>
+        <p>In de tussentijd kunt u hieronder eerder bezochte kunstwerken bekijken:</p>
+        <ul>
+        </ul>
+    </div>
+
+    <script>
+        caches.open('cache-pages-v1').then(function (cache) {
+            cache.keys().then(function (cachedRequests) {
+                cachedRequests.map(function (obj) {
+                    var li = document.createElement('LI');
+                    var a = document.createElement('A');
+                    a.href = obj.url;
+                    a.innerHTML = obj.url.split('/')[obj.url.split('/').length - 1];
+
+                    li.appendChild(a);
+                    document.querySelector('ul').appendChild(li);
+                });
+            });
+        });
+    </script>
+</body>
