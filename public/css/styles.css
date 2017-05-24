@@ -176,3 +176,7 @@ main ul li {
 .show {
   display: block;
 }
+
+#cache-url h2 {
+  text-align: center;
+}
