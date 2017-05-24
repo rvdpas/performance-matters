@@ -27,7 +27,7 @@ Normally a web browser renders the whole document from top to bottom. This means
 ### Lazy loading
 I've added a way of lazy loading the images in the application. When a user with slow internet tries to load the application, there will be placeholders so the page won't jump by loading the images. 
 
-![lazy loading](https://github.com/rvdpas/minor-web-app-from-scratch/blob/master/her/public/images/lazy-loading.png)
+![lazy loading](https://github.com/rvdpas/performance-matters/blob/master/public/img/lazy-loading.png)
 
 [lazy-loading](http://andmag.se/2012/10/responsive-images-how-to-prevent-reflow/)
 
